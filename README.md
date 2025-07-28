@@ -30,14 +30,14 @@ ii. ¿Cuantas regiones de la secuencia (cromosomas) contiene el archivo?: 441
 iii. ¿Cuántos genes están listados en el organismo?: 23190
 
 iv. ¿Cuál es el top 10 de tipo de features (columna 3) más anotados en el genoma?: 
-  Número  Tipo               # anotaciones
-    1     exón               740005
-    2     CDS                698153 
-    3     mRNA               698153
-    4     five_prime_UTR     43296
-    5     three_prime_UTR    32466
-    6     gene               23190
-    7     biological_region  21452
-    8     ncRNA_gene         2979
-    9     lnc_RNA            2471
-    10    rRNA               757
+ ```Número  Tipo               # anotaciones```
+    ```1     exón               740005```
+    ```2     CDS                698153```
+    ```3     mRNA               698153```
+    ```4     five_prime_UTR     43296```
+    ```5     three_prime_UTR    32466```
+    ```6     gene               23190```
+    ```7     biological_region  21452```
+    ```8     ncRNA_gene         2979```
+    ```9     lnc_RNA            2471```
+    ```10    rRNA               757```
