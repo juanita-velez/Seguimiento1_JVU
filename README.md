@@ -1,5 +1,4 @@
 # Seguimiento 1 Juanita Vélez Uribe
-## Desarrollo del primer seguimiento de bioinformática. Por: Juanita Vélez Uribe
 ______________________________________________________________________________________________________________________________________________________________________________
 ## Descripción de los campos que contienen los archivos GFF 3
     #Columna	  Nombre	      Descripción
