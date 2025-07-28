@@ -1,0 +1,31 @@
+# Seguimiento 1 - Juanita Velez Uribe
+# Nota: No se pondrán tildes para evitar problemas de lectura del documento
+
+# Descarga del archivo desde http://ftp.ensembl.org/pub/current_gff3/
+  wget https://ftp.ensembl.org/pub/current_gff3/gouania_willdenowi/Gouania_willdenowi.fGouWil2.1.114.gff3.gz
+
+# Se descomprime el archivo
+  gunzip Gouania_willdenowi.fGouWil2.1.114.gff3.gz
+
+# Verificación del archivo
+  gt gff3validator Gouania_willdenowi.fGouWil2.1.114.gff3
+
+# i. Número de features del archivo
+  grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | wc -l
+  # Usamos '-v "^#" [...]' para excluir los comentarios de la busqueda y tener solo los features
+
+# ii. Número de regiones de la secuencia (cromosoma) que contiene el archivo
+  grep "^##sequence-region" Gouania_willdenowi.fGouWil2.1.114.gff3 | wc -l
+  # Cada línea que comienza con '##sequence-region' define una región de secuencia (cromosoma)  
+
+# iii. Número de genes listados en el organismo
+  grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | awk '$3 == "gene"' | wc -l
+  # El comando awk '$3 == "gene"' busca y cuenta en la tercera columna (type) los tipos que corresponden a "gene"
+
+# iv. Top 10 de tipo de features mas anotados en el archivo
+  grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | cut -f3 | sort | uniq -c | sort -nr | head -n 10
+  # 'cut -f3' selecciona solo la columna tres donde tengo los tipos de feature
+  # 'sort' ordena alfabéticamente los tipos de feature (requisito para uniq)
+  # 'uniq -c' cuenta cuantas veces aparece cada tipo de feature
+  # 'sort -nr' ordena según el numero de ocurrencias (repeticiones) de cada feature
+  # 'head -n 10' muestra los primeros diez resultados (top 10) 
