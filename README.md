@@ -13,6 +13,7 @@ ________________________________________________________________________________
        9	      attributes	  Atributos en formato clave=valor; separados por ";"
 
   *Ejemplo de una línea:*
+  
     ```chr1	Ensembl	gene	1000	5000	.	+	.	ID=gene0001;Name=BRCA1;Note=tumor_suppressor_gene```
 
 ## Breve descripción del organismo _Gouania willdenowi._
