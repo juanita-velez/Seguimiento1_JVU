@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
   *Ejemplo de una línea:*
   
-    ```chr1	Ensembl	gene	1000	5000	.	+	.	ID=gene0001;Name=BRCA1;Note=tumor_suppressor_gene```
+    chr1 Ensembl	gene	1000	5000	.	+	.	ID=gene0001;Name=BRCA1;Note=tumor_suppressor_gene
 
 ## Breve descripción del organismo _Gouania willdenowi._
 De acuerdo a GBIF Secretariat (2023), el _G. willdenowi_ es un animal que habitas el mar mediterráneo en profundidades de entre 0.5 y 2 metros. Es conocido comúnmente cmo 'pez chupasangre de hocico romo' o 'pez chupasangre romo'. Este organismo difiere de especies cogenéricas por la combinación de las siguientes características: Perfil dorsal de la cabeza recto entre la nuca (encima del ojo) y la punta del labio superior, el ángulo posterior de las mandíbulas se extiende entre una línea vertical trazada por el borde posterior de la narina anterior y una línea vertical trazada por el borde anterior del ojo, la invaginación infraorbital vertical a la parte posterior del ojo, el borde opercular posterior en forma de W con dos puntas de igual longitud, las filas longitudinales infralaterales y filas transversales suborbitales de neuromastos superficiales ubicados en un surco profundo bien definido, la sección transversal del tronco detrás de la base de la aleta pectoral en forma de medio óvalo con lado ventral recto, los gránulos en el cuerpo poco profundos y poco visibles, entre otras. 
