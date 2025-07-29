@@ -19,8 +19,9 @@
   # Cada línea que comienza con '##sequence-region' define una región de secuencia (cromosoma)  
 
 # iii. Número de genes listados en el organismo
-  grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | awk '$3 == "gene"' | wc -l
-  # El comando awk '$3 == "gene"' busca y cuenta en la tercera columna (type) los tipos que corresponden a "gene"
+  grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | cut -f3 | grep -x 'gene' | wc -l
+  # 'cut -f3' selecciona solo la columna tres donde tengo los tipos de feature
+  # '-x' busca coincidencias exactamente con 'gene'
 
 # iv. Top 10 de tipo de features mas anotados en el archivo
   grep -v "^#" Gouania_willdenowi.fGouWil2.1.114.gff3 | cut -f3 | sort | uniq -c | sort -nr | head -n 10
